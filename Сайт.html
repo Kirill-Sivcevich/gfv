@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        body { 
+            background-color: white; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            font-family: 'Roboto', sans-serif;
+        }
+        .header, .footer { 
+            background-color: rgb(12, 11, 12); 
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+            width: 100%; 
+        }
+        .search-bar { 
+            background-color: rgb(19, 18, 18); 
+            margin: 10px; 
+            padding: 10px; 
+            position: fixed; 
+            bottom: 0; 
+            right: 0; 
+            z-index:  999999999 ;
+        }
+        .phone-icon { float: right; }
+        .logo { 
+            position: absolute; 
+            top: 1; 
+            left: 0; 
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover; 
+        }
+        .square { width: 100px; height: 100px; margin: 10px; }
+        .site-title { 
+            font-size: 2em; 
+            color: gold; 
+            text-shadow: 2px 2px 4px #000000; 
+        }
+        .content { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+        }
+        .nav {   
+            display: flex;   
+            margin: 0;   
+            padding: 0;    
+            list-style: none;
+            width: 100%;
+            justify-content: space-between;
+        }    
+        .nav-item {    
+            position: relative;  
+        }
+        .nav-item:hover > .subnav {    
+            display: block;  
+        }
+        .nav-link {    
+            display: block;   
+            padding: 8px 16px;    
+            background-color: #444;   
+            color: #fff;    
+            text-decoration: none;  
+        }   
+        .nav-link:hover {    
+            background-color: #333;  
+        }
+        .image-container { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            width: 50%; 
+        }
+        .image-text { margin-top: 10px; }
+        
+        body{
+            background-image: url(background.jpg);
+        }
+        body {
+    color: #f91d1d; /* Ярко-серый цвет */
+}
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+        h1 {
+            font-family: 'Playfair Display', serif;
+        }
+        .instagram-icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url('URL_иконки_Instagram');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #121313;
+            color: rgb(230, 222, 222);
+            text-align: center;
+            padding: 10px 0;
+        }
+        .footer a {
+            color: black;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="instagram.png" target="_blank" class="instagram-icon"></a>
+<div class="header">
+    <img src="logo.png" class="logo">
+    <div class="site-title">Svalov Helper</div>
+    <input type="text" class="search-bar">
+    <img src="phone-icon.png" class="phone-icon">
+</div>
+    <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Помощь</a>
+    </li>
+    </ul>
+    <div class="content">
+        <div class="image-container">
+            <img class="square" src="image1.jpg">
+            <p class="image-text">Гармония – это:<br>
+                1. (греч. harmonia – связь, стройность, соразмерность)<br>
+                 Соразмерность частей, <br> 
+                    слияние различных компонентов объекта <br>
+                    в единое огранич. целое.<br>
+                В др. -греч. философии – организованность космоса, <br>
+                противостоящая хаосу.<br>
+                В истории эстетики рассматривалась как существ. характеристика прекрасного.</p>
+        </div>
+        <div class="image-container">
+            <img class="square" src="image2.jpg">
+            <p class="image-text">Выразит. cредства музыки,<br> 
+                связанные с объединением тонов в созвучия, <br>
+                и последованием созвучий в условиях лада. <br>
+                Важнейшее значение в Г. имеют аккорды:<br>
+                 в смене аккордов проявляются их ладовые, гармонич. <br>
+                 функции, а также закономерности голосоведения.<br> 
+                 Гармония во многом зависит от мелодии и в то же время обогащает, <br>
+                 углубляет её выразительность.</p>
+        </div>
+        <div class="image-container">
+            <img class="square" src="image3.jpg">
+            <p class="image-text">Психоло́гия  — гуманитарная<br>
+                 научная дисциплина, изучающая закономерности возникновения, <br>
+                 развития и функционирования психики <br>
+                 и психической деятельности человека и групп людей.<br>
+                   Тем не менее психология объединяет в себе гуманитарный<br>
+                    и естественно-научный подходы.</p>
+        </div>
+        <div class="image-container">
+            <img class="square" src="image4.jpeg">
+            <p class="image-text">Спокойствие - это психическое состояние умиротворения,<br>
+                отсутствие возбуждения или беспокойства.<br> 
+                Это также означает нахождение в состоянии безмятежности,<br>
+                безмятежности или умиротворения.<br>
+                бычному человеку легче всего обрести спокойствие в состоянии релаксации,<br>
+                но его также можно обрести в гораздо более бдительных<br>
+                и осознанных состояниях. Некоторые люди считают, <br>
+                что сосредоточение ума на чем-то внешнем, таком как учеба,<br>
+                или внутреннем, таком как дыхание, может быть очень успокаивающим.</p>
+        </div>
+        <div class="image-container">
+            <img class="square" src="image5.jpg">
+            <p class="image-text">Душа – это нематериальная часть живого существа,<br>
+                 отвечающая за реализацию его предназначения<br>
+                  и главнейших жизненных задач. <br>
+                  Отношения с душой проявляются в определенных эмоциональных состояниях,<br>
+                   называемых душевным подъемом, когда существо желает совершить то,<br>
+                    что имеет отношение к его предназначению и задачам.</p>
+        </div>
+        <div class="image-container">
+            <img class="square" src="image6.jpeg">
+            <p class="image-text">Чувства-На основе эмоций у людей возникают чувства. <br>
+                Они, так сказать, "обощают эмоции" и всегда связаны с кем либо<br>
+                 или с чем либо: например, чувство любви к человеку,<br>
+                  к родине, к Богу, чувство ненависти к врагу и т.п.</p>
+        </div>
+    </div>
+    <div class="search-bar">
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Поиск помощи">
+            <input type="submit" value="Найти">
+        </form>
+        </div>
+        
+    <div class="footer">
+        &copy; Психология
+    </div>
+    
+</body>
+</html>
+

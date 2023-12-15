@@ -1,0 +1,77 @@
+body, html {
+    background: none repeat scroll 0 0 #fff;
+    font-family: Tahoma,Arial;
+    margin: 0;
+    padding: 0;
+}
+#top, #middle, bottom {
+    position: relative;
+    width: 100%;
+}
+#top {
+    background: none repeat scroll 0 0 #171717;
+    top: 0;
+}
+.logo {
+    position: relative;
+  color: #fff;
+  width: 150px;
+  float:left;
+  margin-top:16px;
+}
+#nav {
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    width: 900px;
+}
+#nav li {
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    width: 100px;
+}
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+#nav li:hover {
+    background: none repeat scroll 0 0 #ff9900;
+}
+#middle {
+    height: auto;
+    min-height: 100px;
+}
+#content {
+    margin: 0 auto;
+    position: relative;
+    width: 800px;
+}
+#content a {
+    color: #000;
+    text-decoration: none;
+}
+#content a:hover {
+    color: #ff9900;
+}
+#bottom {
+    background: none repeat scroll 0 0 #ff9900;
+    bottom: 0;
+    height: auto;
+    min-height: 100px;
+    top: 5px;
+}
+#footer {
+    color: #fff;
+    margin: 0 auto;
+    padding: 40px 5px 5px;
+    position: relative;
+    width: 800px;
+}
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+#footer a:hover {
+    color: #000;
+}
